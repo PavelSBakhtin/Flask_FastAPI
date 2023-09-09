@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+
+    {% block content %} {% endblock %}
+
+    <header>
+        <a href="{{ url_for('index') }}">вернуться в начало</a>
+    </header>
+
+
+    <footer>
+        <p> Контакты: Адрес, Телефон </p>
+    </footer>
+
+</body>
+
+</html>
