@@ -12,3 +12,6 @@ def hello_world():  # put application's code here
 
 if __name__ == '__main__':
     app.run()
+
+
+# запуск из терминала: flask --app ./Lesson_1/lesson1_task1.py run
