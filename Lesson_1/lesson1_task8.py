@@ -41,6 +41,7 @@ def students():
     context = {'students': _students}
     return render_template('x_students.html', **context)
 
+
 @app.route('/news/')
 def news():
     _news = [
