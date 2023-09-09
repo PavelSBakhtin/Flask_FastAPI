@@ -11,11 +11,28 @@
 </head>
 
 <body>
+    {% block header %}
+    {% endblock %}
+
+    {% block menu %}
+    <nav>
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('about') }}">О нас</a>
+        <a href="{{ url_for('contact') }}">Контакты</a>
+        <a href="{{ url_for('students') }}">Студенты</a>
+        <a href="{{ url_for('news') }}">Новости</a>
+    </nav>
+    {% endblock %}
+
     {% block content %}
     <p>
         Привет, мир!<br />
         Hello, World!
     </p>
+    {% endblock %}
+    
+    {% block footer %}
+    <br />Это подвал
     {% endblock %}
 </body>
 
