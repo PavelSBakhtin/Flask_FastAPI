@@ -15,7 +15,7 @@ def menu_items():
         {'name': 'Task 1', 'url': url_for("task1")},
         {'name': 'Task 2', 'url': url_for("task2")},
         {'name': 'Task 3', 'url': url_for("task3")},
-        # {'name': 'Task 4', 'url': url_for("task4")},
+        {'name': 'Task 4', 'url': url_for("task4")},
         # {'name': 'Task 9', 'url': url_for("task9")},
     ]
     return dict(menu_items=menu_items)
@@ -23,7 +23,7 @@ def menu_items():
 
 @app.route('/')
 def index():
-    return render_template('index1.html')
+    return render_template('index.html')
 
 
 @app.route('/task1')
@@ -59,6 +59,11 @@ def task3():
         student_data.append(student_info)
 
     return render_template('task3.html', students=student_data)
+
+
+@app.route('/task4')
+def task4():
+    return render_template('task4.html')
 
 
 @app.cli.command('init_db')
