@@ -1,0 +1,41 @@
+$ "d:/учёба/Python/.../Lessons/venv/Scripts/python.exe"
+"d:/учёба/Python/.../Lessons/Lesson_4/lesson4_task9/lesson4_task9.py"
+Downloading 10 images using threading...
+Downloaded images\b5cb2902-8c8b-4c0b-ac88-ee301aee91eb.jpg in 1.18 seconds
+Downloaded images\1ddb2caa-41f5-456f-a446-f5a5335b5811.jpg in 1.21 seconds
+Downloaded images\15cde4c5-5208-4e31-aa11-cc4853893392.jpg in 1.29 seconds
+Downloaded images\3a085a78-900e-4206-a864-74c31d4d696b.jpg in 1.31 seconds
+Downloaded images\f17b68a4-89fb-4464-ba05-62208c5bda10.jpg in 1.51 seconds
+Downloaded images\49cc1354-eae4-4bef-82ce-e1e83a26fb81.jpg in 1.65 seconds
+Downloaded images\c6c7ab71-bf8c-4c1d-8bee-31cbdf5e2f5e.jpg in 1.66 seconds
+Downloaded images\0d8454ea-346c-43a7-9611-a15d25a7bd67.jpg in 1.69 seconds
+Downloaded images\c34c4ba7-3fdc-4c4e-b57e-72394aef5d08.jpg in 1.72 seconds
+Downloaded images\e388f78f-1211-4d1d-9aeb-19e1ca957136.jpg in 2.69 seconds
+Total time using threading: 2.69 seconds
+
+Downloading 10 images using multiprocessing...
+Downloaded images\1ddb2caa-41f5-456f-a446-f5a5335b5811.jpg in 1.36 seconds
+Downloaded images\b5cb2902-8c8b-4c0b-ac88-ee301aee91eb.jpg in 1.20 seconds
+Downloaded images\15cde4c5-5208-4e31-aa11-cc4853893392.jpg in 1.58 seconds
+Downloaded images\c34c4ba7-3fdc-4c4e-b57e-72394aef5d08.jpg in 1.56 seconds
+Downloaded images\3a085a78-900e-4206-a864-74c31d4d696b.jpg in 1.46 seconds
+Downloaded images\49cc1354-eae4-4bef-82ce-e1e83a26fb81.jpg in 1.62 seconds
+Downloaded images\f17b68a4-89fb-4464-ba05-62208c5bda10.jpg in 1.55 seconds
+Downloaded images\c6c7ab71-bf8c-4c1d-8bee-31cbdf5e2f5e.jpg in 1.79 seconds
+Downloaded images\0d8454ea-346c-43a7-9611-a15d25a7bd67.jpg in 1.84 seconds
+Downloaded images\e388f78f-1211-4d1d-9aeb-19e1ca957136.jpg in 2.54 seconds
+Total time using multiprocessing: 3.35 seconds
+
+Downloading 10 images using asyncio...
+Downloaded images\1ddb2caa-41f5-456f-a446-f5a5335b5811.jpg in 1.10 seconds
+Downloaded images\b5cb2902-8c8b-4c0b-ac88-ee301aee91eb.jpg in 1.19 seconds
+Downloaded images\15cde4c5-5208-4e31-aa11-cc4853893392.jpg in 1.29 seconds
+Downloaded images\3a085a78-900e-4206-a864-74c31d4d696b.jpg in 1.33 seconds
+Downloaded images\c34c4ba7-3fdc-4c4e-b57e-72394aef5d08.jpg in 1.57 seconds
+Downloaded images\0d8454ea-346c-43a7-9611-a15d25a7bd67.jpg in 1.63 seconds
+Downloaded images\49cc1354-eae4-4bef-82ce-e1e83a26fb81.jpg in 1.70 seconds
+Downloaded images\e388f78f-1211-4d1d-9aeb-19e1ca957136.jpg in 2.38 seconds
+Downloaded images\c6c7ab71-bf8c-4c1d-8bee-31cbdf5e2f5e.jpg in 2.58 seconds
+Downloaded images\f17b68a4-89fb-4464-ba05-62208c5bda10.jpg in 3.55 seconds
+Total time using asyncio: 3.56 seconds
+(venv)
