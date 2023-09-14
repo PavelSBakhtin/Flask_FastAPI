@@ -1,0 +1,55 @@
+<html><!--
+* PyWebCopy Engine [version 7.0.2]
+* Copyright 2020; Raja Tomar
+* File mirrored from [https://megaseller.shop/templates/login.html]
+* At UTC datetime: [2023-09-14 16:47:06.119973]
+--><body><p>{% extends 'base.html' %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block slider %}
+{% endblock %}
+
+{% block sidemenu %}
+{% endblock %}
+
+{% block search %}
+{% endblock %}
+
+{% block content %}
+</p><div class="about">
+  <div class="container">
+         <div class="register">
+			   <div class="col-md-6 login-left">
+			  	 <h3>NEW CUSTOMERS</h3>
+				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+				 <a class="acount-btn" href="./url_for_registration.html">Create an Account</a>
+			   </div>
+			   <div class="col-md-6 login-right">
+			  	<h3>REGISTERED CUSTOMERS</h3>
+				<p>If you have an account with us, please log in.</p>
+				<form action="../login/index.html" method="POST">
+                    {{ form.csrf_token }}
+                    {% for field in form if field.name != 'csrf_token' %}
+				  <div>
+					<span>{{ field.label }}<label>*</label></span><br>
+                        {{ field(size=32) }}
+				  </div>
+                    {% if field.errors %}
+                            <ul class="alert alert-danger">
+                                {% for error in field.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                      {% endfor %}
+				  <input type="submit" value="Login">
+			    </form>
+			   </div>	
+			   <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+{% endblock %}<meta charset="ISO-8859-1"></body></html>
